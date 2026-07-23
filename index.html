@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Campus Portal</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🎓 Student Campus Portal</h1>
+
+            <p>
+                Find your room location and timetable
+            </p>
+        </div>
+
+
+        <div class="search-box">
+
+            <h2>Find Your Details</h2>
+
+            <p>
+                Enter your Roll Number
+            </p>
+
+            <input
+                type="text"
+                id="rollNo"
+                placeholder="Enter Roll Number"
+            >
+
+            <button onclick="searchStudent()">
+                Search
+            </button>
+
+        </div>
+
+
+        <div
+            id="loading"
+            class="loading hidden"
+        >
+            Searching...
+        </div>
+
+
+        <div
+            id="error"
+            class="error hidden"
+        ></div>
+
+
+        <div
+            id="studentResult"
+            class="hidden"
+        >
+
+            <div class="student-card">
+
+                <h2>👤 Student Details</h2>
+
+                <div class="detail">
+                    <span>Name</span>
+                    <strong id="studentName"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Roll Number</span>
+                    <strong id="studentRollNo"></strong>
+                </div>
+
+            </div>
+
+
+            <div class="location-card">
+
+                <h2>📍 Your Location</h2>
+
+                <div class="location-grid">
+
+                    <div>
+                        <span>Room</span>
+                        <strong id="roomNo"></strong>
+                    </div>
+
+                    <div>
+                        <span>Floor</span>
+                        <strong id="floor"></strong>
+                    </div>
+
+                    <div>
+                        <span>Wing</span>
+                        <strong id="wing"></strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timetable-card">
+
+                <h2>📅 Your Timetable</h2>
+
+                <div id="timetable">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

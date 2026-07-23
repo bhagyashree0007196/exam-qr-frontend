@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+}
+
+.search-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.search-box h2 {
+    margin-bottom: 8px;
+}
+
+.search-box p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.student-card,
+.location-card,
+.timetable-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-card h2,
+.location-card h2,
+.timetable-card h2 {
+    margin-bottom: 20px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail span {
+    color: #666;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.location-grid div {
+    text-align: center;
+    padding: 15px;
+    background: #f4f6f8;
+    border-radius: 8px;
+}
+
+.location-grid span {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.location-grid strong {
+    font-size: 18px;
+}
+
+.day-section {
+    margin-bottom: 25px;
+}
+
+.day-section h3 {
+    margin-bottom: 10px;
+}
+
+.timetable-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.time {
+    color: #666;
+}
+
+.subject {
+    font-weight: bold;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.error {
+    background: #ffe5e5;
+    color: #b00020;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timetable-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
