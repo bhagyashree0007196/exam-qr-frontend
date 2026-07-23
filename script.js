@@ -1,238 +1,75 @@
-const API_URL = "http://localhost:3000";
+﻿async function searchStudent() {
 
-
-async function searchStudent() {
-
-    const rollNoInput = document.getElementById("rollNo");
-
-    const rollNo = rollNoInput.value.trim();
+    const rollNo = document.getElementById("rollNo").value.trim();
 
     const loading = document.getElementById("loading");
-
     const error = document.getElementById("error");
-
-    const studentResult =
-        document.getElementById("studentResult");
-
-
-    // Clear old results
+    const studentResult = document.getElementById("studentResult");
 
     error.classList.add("hidden");
-
     studentResult.classList.add("hidden");
 
-
-    // Check Roll Number
-
     if (!rollNo) {
-
-        error.textContent =
-            "Please enter your Roll Number.";
-
+        error.textContent = "Please enter your Roll Number.";
         error.classList.remove("hidden");
-
         return;
     }
 
-
     loading.classList.remove("hidden");
-
 
     try {
 
-        // Fetch Student
+        const response = await fetch("./students.json");
 
-        const studentResponse =
-            await fetch(
-                `${API_URL}/students/${rollNo}`
-            );
+        if (!response.ok) {
+            throw new Error("Unable to load student data.");
+        }
 
+        const students = await response.json();
 
-        if (!studentResponse.ok) {
+        const student = students.find(
+            (item) =>
+                String(item.rollNo).trim() ===
+                String(rollNo).trim()
+        );
 
+        if (!student) {
             throw new Error(
                 "Student not found. Please check your Roll Number."
             );
         }
 
+        document.getElementById("studentName").textContent =
+            student.name;
 
-        const student =
-            await studentResponse.json();
+        document.getElementById("studentRollNo").textContent =
+            student.rollNo;
 
+        document.getElementById("roomNo").textContent =
+            student.roomNo;
 
-        // Show Student Details
+        document.getElementById("floor").textContent =
+            student.floor;
 
-        document.getElementById(
-            "studentName"
-        ).textContent = student.name;
+        document.getElementById("wing").textContent =
+            student.wing;
 
+        document.getElementById("timetable").innerHTML =
+            "<p>Timetable will be available soon.</p>";
 
-        document.getElementById(
-            "studentRollNo"
-        ).textContent = student.rollNo;
-
-
-        // Show Location
-
-        document.getElementById(
-            "roomNo"
-        ).textContent = student.roomNo;
-
-
-        document.getElementById(
-            "floor"
-        ).textContent = student.floor;
-
-
-        document.getElementById(
-            "wing"
-        ).textContent = student.wing;
-
-
-        // Fetch Timetable
-
-        const timetableResponse =
-            await fetch(
-                `${API_URL}/timetable`
-            );
-
-
-        if (!timetableResponse.ok) {
-
-            throw new Error(
-                "Unable to load timetable."
-            );
-        }
-
-
-        const timetable =
-            await timetableResponse.json();
-
-
-        displayTimetable(timetable);
-
-
-        // Show Result
-
-        studentResult.classList.remove(
-            "hidden"
-        );
-
+        studentResult.classList.remove("hidden");
 
     } catch (errorMessage) {
 
         error.textContent =
             errorMessage.message;
 
-        error.classList.remove(
-            "hidden"
-        );
+        error.classList.remove("hidden");
 
     } finally {
 
-        loading.classList.add(
-            "hidden"
-        );
+        loading.classList.add("hidden");
 
     }
-
-}
-
-
-function displayTimetable(timetable) {
-
-    const timetableContainer =
-        document.getElementById(
-            "timetable"
-        );
-
-
-    timetableContainer.innerHTML = "";
-
-
-    const days = [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-    ];
-
-
-    days.forEach((day) => {
-
-        const dayEntries =
-            timetable.filter(
-                (item) =>
-                    item.day === day
-            );
-
-
-        if (dayEntries.length === 0) {
-            return;
-        }
-
-
-        const daySection =
-            document.createElement(
-                "div"
-            );
-
-        daySection.className =
-            "day-section";
-
-
-        const dayTitle =
-            document.createElement(
-                "h3"
-            );
-
-        dayTitle.textContent =
-            day;
-
-
-        daySection.appendChild(
-            dayTitle
-        );
-
-
-        dayEntries.forEach(
-            (item) => {
-
-                const row =
-                    document.createElement(
-                        "div"
-                    );
-
-                row.className =
-                    "timetable-row";
-
-
-                row.innerHTML = `
-                    <div class="time">
-                        ${item.time}
-                    </div>
-
-                    <div class="subject">
-                        ${item.subject}
-                    </div>
-                `;
-
-
-                daySection.appendChild(
-                    row
-                );
-
-            }
-        );
-
-
-        timetableContainer.appendChild(
-            daySection
-        );
-
-    });
 
 }
