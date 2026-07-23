@@ -1,0 +1,279 @@
+[
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "9:00 AM - 11:00 AM",
+    "subject": "Data Structure Lab",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "11:00 AM - 12:00 PM",
+    "subject": "Discrete Mathematics",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "12:00 PM - 1:00 PM",
+    "subject": "Data Structure using C",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "1:00 PM - 2:00 PM",
+    "subject": "Lunch",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "2:00 PM - 3:00 PM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "3:00 PM - 4:00 PM",
+    "subject": "Data Structure using C",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Monday",
+    "time": "4:00 PM - 5:00 PM",
+    "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+    "roomNo": "N/A"
+  },
+
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Tuesday",
+    "time": "9:00 AM - 1:00 PM",
+    "subject": "No Class",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Tuesday",
+    "time": "1:00 PM - 2:00 PM",
+    "subject": "Lunch",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Tuesday",
+    "time": "2:00 PM - 5:00 PM",
+    "subject": "No Class",
+    "roomNo": "N/A"
+  },
+
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "9:00 AM - 11:00 AM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "11:00 AM - 12:00 PM",
+    "subject": "Data Structure using C",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "12:00 PM - 1:00 PM",
+    "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "1:00 PM - 2:00 PM",
+    "subject": "Lunch",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "2:00 PM - 3:00 PM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "3:00 PM - 4:00 PM",
+    "subject": "Industrial Sociology",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Wednesday",
+    "time": "4:00 PM - 5:00 PM",
+    "subject": "No Class",
+    "roomNo": "N/A"
+  },
+
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "9:00 AM - 10:00 AM",
+    "subject": "Discrete Mathematics",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "10:00 AM - 11:00 AM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "11:00 AM - 12:00 PM",
+    "subject": "Data Structure using C",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "12:00 PM - 1:00 PM",
+    "subject": "Library",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "1:00 PM - 2:00 PM",
+    "subject": "Lunch",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "2:00 PM - 3:00 PM",
+    "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "3:00 PM - 4:00 PM",
+    "subject": "Industrial Sociology",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Thursday",
+    "time": "4:00 PM - 5:00 PM",
+    "subject": "Discrete Mathematics",
+    "roomNo": "N/A"
+  },
+
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "9:00 AM - 10:00 AM",
+    "subject": "Data Structure using C",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "10:00 AM - 11:00 AM",
+    "subject": "Artificial Intelligence in Mechanical Engineering Systems",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "11:00 AM - 1:00 PM",
+    "subject": "NSS / Yoga",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "1:00 PM - 2:00 PM",
+    "subject": "Lunch",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "2:00 PM - 3:00 PM",
+    "subject": "Discrete Mathematics",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "3:00 PM - 4:00 PM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Friday",
+    "time": "4:00 PM - 5:00 PM",
+    "subject": "Digital Logic Design",
+    "roomNo": "N/A"
+  },
+
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Saturday",
+    "time": "All Day",
+    "subject": "Holiday",
+    "roomNo": "N/A"
+  },
+  {
+    "section": "CSAI-2B",
+    "semester": "III",
+    "day": "Sunday",
+    "time": "All Day",
+    "subject": "Holiday",
+    "roomNo": "N/A"
+  }
+]
